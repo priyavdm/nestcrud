@@ -8,7 +8,6 @@ import { Repository } from 'typeorm';
 @Injectable()
 export class UserdetailsService {
   constructor(@InjectRepository(Userdetail) private userdetailsRepository: Repository<Userdetail>) {}
-  
   async create(createUserdetailDto: any) {
     // return 'This action adds a new userdetail';
     console.log(createUserdetailDto);

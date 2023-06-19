@@ -7,6 +7,7 @@ import { type } from 'os';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { nodemailerService } from 'src/nodemailer.service';
 
+
 @Module({
   imports: [
     ConfigModule.forRoot(
@@ -22,7 +23,7 @@ import { nodemailerService } from 'src/nodemailer.service';
       password: process.env.DB_PASSWORD,
       database: process.env.DB_DATABASE,
       entities: [],
-      synchronize: true,
+      synchronize: false,
       autoLoadEntities: true,
       }),
 

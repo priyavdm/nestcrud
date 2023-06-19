@@ -43,11 +43,6 @@ export class UserdetailsController {
         })
      }
   }
-     // // await this.userdetailsService.create(createUserdetailDto);
-    // //  res.status(HttpStatus.OK).json({
-    // //       message:"User details inserted successfully"
-    // //   })
-    // }
    catch(error){
       console.log(error);
       
